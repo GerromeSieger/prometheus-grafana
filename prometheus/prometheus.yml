@@ -40,6 +40,7 @@ scrape_configs:
          - targets:
            - localhost:9090
            - cadvisor:8080
+           - 192.168.56.117
            - node-exporter:9100
   - job_name: 'blackbox'
     metrics_path: /probe
